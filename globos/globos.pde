@@ -24,16 +24,18 @@ class Globo
 
 ArrayList<Globo> globos;
 
-
+PImage goku;
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  goku = loadImage("goku.png");
 }
 
 void draw()
 {
-  background(0);
+  background(0,100,250);
+  image(goku, 0, 0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
